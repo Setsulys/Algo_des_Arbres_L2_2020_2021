@@ -1,0 +1,20 @@
+digraph arbre {
+	node [shape = record, height = .1]
+	edge [tailclip = false, arrowtail = dot, dir = both];
+
+	n0x7fffc369c260 [style=filled , fillcolor=yellow , label ="<gauche > | H:4| <valeur > 13 | B:-3| <droit >"];
+	n0x7fffc369c260 [label ="<gauche > | H:4| <valeur > 13 | B:-3|<droit >"];
+	n0x7fffc369c260: gauche : c -> n0x7fffc369c2a0: valeur ;
+	n0x7fffc369c2a0 [style=filled , fillcolor=yellow , label ="<gauche > | H:3| <valeur > 8 | B:3| <droit >"];
+	n0x7fffc369c2a0 [label ="<gauche > | H:3| <valeur > 8 | B:3|<droit >"];
+	n0x7fffc369c2a0: droit : c -> n0x7fffc369c2c0: valeur ;
+	n0x7fffc369c2c0 [label ="<gauche > | H:2| <valeur > 10 | B:1|<droit >"];
+	n0x7fffc369c2c0: gauche : c -> n0x7fffc369c2e0: valeur ;
+	n0x7fffc369c2e0 [label ="<gauche > | H:0| <valeur > 9 | B:0|<droit >"];
+	n0x7fffc369c2c0: droit : c -> n0x7fffc369c300: valeur ;
+	n0x7fffc369c300 [label ="<gauche > | H:1| <valeur > 11 | B:1|<droit >"];
+	n0x7fffc369c300: droit : c -> n0x7fffc369c320: valeur ;
+	n0x7fffc369c320 [label ="<gauche > | H:0| <valeur > 12 | B:0|<droit >"];
+	n0x7fffc369c260: droit : c -> n0x7fffc369c280: valeur ;
+	n0x7fffc369c280 [label ="<gauche > | H:0| <valeur > 15 | B:0|<droit >"];
+}

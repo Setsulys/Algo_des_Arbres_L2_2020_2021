@@ -1,0 +1,6 @@
+digraph arbre {
+	node [ shape = record , height = .1 ] 
+	edge [ tailclip = false , arrowtail = dot , dir = both ];
+
+	n0x7fffd981fae0 [ label="<gauche> | <valeur> 1 | <droit>"];
+}
